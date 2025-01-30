@@ -73,6 +73,7 @@ POST /api/auth/login
 GET /api/employees
 
 Example:
+
 Register User: POST to http://localhost:8080/api/auth/register
 
 {
@@ -84,6 +85,7 @@ Register User: POST to http://localhost:8080/api/auth/register
   "role": "USER"
   
 }
+
 Login User: POST to http://localhost:8080/api/auth/login
 
 {
@@ -93,6 +95,7 @@ Login User: POST to http://localhost:8080/api/auth/login
   "password": "ram123"
   
 }
+
 Get Employees: GET to http://localhost:8080/api/employees
 
 # GitHub Repository Details
