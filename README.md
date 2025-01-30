@@ -42,17 +42,22 @@ Locate the application.properties file in the src/main/resources directory.
 
 Configure your application properties, such as database connection or email settings. Example configuration for a local environment:
 
-properties
-Copy
-Edit
 spring.datasource.url=jdbc:mysql://localhost:3306/your_database
+
 spring.datasource.username=root
+
 spring.datasource.password=your_password
+
 spring.jpa.hibernate.ddl-auto=update
+
 spring.mail.host=smtp.mailtrap.io
+
 spring.mail.port=587
-spring.mail.username=your_username
-spring.mail.password=your_password
+
+spring.mail.username=root
+
+spring.mail.password=
+
 Update any necessary credentials such as database or email credentials.
 
 
@@ -62,27 +67,31 @@ After running the application, you can test the endpoints via Postman or Swagger
 Open Postman and set up API requests.
 Test the endpoints such as:
 POST /api/auth/register
+
 POST /api/auth/login
+
 GET /api/employees
+
 Example:
 Register User: POST to http://localhost:8080/api/auth/register
 
-json
-Copy
-Edit
 {
+
   "username": "ram",
-  "password": "ram123",
+  
+  "password": "ram123"
+  ,
   "role": "USER"
+  
 }
 Login User: POST to http://localhost:8080/api/auth/login
 
-json
-Copy
-Edit
 {
+
   "username": "ram",
+  
   "password": "ram123"
+  
 }
 Get Employees: GET to http://localhost:8080/api/employees
 
